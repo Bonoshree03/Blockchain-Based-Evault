@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Static Webpage</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        .header {
+            background-color: #f4f4f4;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #f4f4f4;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Header Row -->
+        <tr class="header">
+            <td>My Simple Webpage</td>
+        </tr>
+        <!-- Content Row -->
+        <tr>
+            <td>
+                <h2>Welcome!</h2>
+                <p>This is a simple static webpage using HTML tables.</p>
+                <p>Here's an example of a table with some data:</p>
+                <table>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>First item description</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>Second item description</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 3</td>
+                        <td>Third item description</td>
+                        <td>$30.00</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
