@@ -108,40 +108,41 @@ a.primary-cta{
 }
 
 .cat {
-    position: relative; /* Ensure this is relative so absolute children position correctly */
-    height: 500px; /* Set a height for visibility */
-    width: 100%;
-    margin-top: 3em;
-}
-
-.inner-circle, .outer-circle {
-    position: absolute; /* Correctly position these circles */
-    border-radius: 50%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Center them */
-}
-
-.inner-circle {
-    background: #ADD8E6;
-    width: 600px; /* Set dimensions */
-    height: 300px;
-    z-index: -1; /* Ensure it's behind other content */
-}
-
-.outer-circle {
-    background: #D3D596;
-    width: 500px; /* Set dimensions */
-    height: 500px;
-    z-index: -2; /* Ensure it's behind other content */
+	    position: relative; /* Ensure this is relative so absolute children position correctly */
+	    height: 500px; /* Set a height for visibility */
+	    width: 100%;
+	    margin-top: 3em;
+	
+	
+	.inner-circle, .outer-circle {
+	    position: absolute; /* Correctly position these circles */
+	    border-radius: 50%;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%); /* Center them */
+	}
+	
+	.inner-circle {
+	    background: #ADD8E6;
+	    width: 600px; /* Set dimensions */
+	    height: 300px;
+	    z-index: -1; /* Ensure it's behind other content */
+	}
+	
+	.outer-circle {
+	    background: #D3D596;
+	    width: 500px; /* Set dimensions */
+	    height: 500px;
+	    z-index: -2; /* Ensure it's behind other content */
+	}
 }
 
 @media (min-width: 798px){
 	.wrap{
 		margin: 0 4em;
+		justify-content: space-between;
 	} 
-	justify-content:;
-	ctoose;
+	
 	.hide-desktop{
 		display: none;
 	}
