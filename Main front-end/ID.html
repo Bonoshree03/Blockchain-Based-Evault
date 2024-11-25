@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Identification Files</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <a href="evhome.html" class="logo">E-Vault</a>
+      <span class="divider">|</span>
+      <a href="evhome.html" class="home">Home</a>
+    </div>
+    <div class="right-section">
+      <nav class="menu">
+        <a href="login.html">Log In/Sign Up</a>
+        <a href="uploader.html">Upload Files</a>
+        
+        <a href="allfiles.html">All Files</a>
+        <a href="about.html">About us</a>
+        <a href="#">Sign out</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Upload Identification Files</h1>
+    <ul class="file-list">
+      <li>
+        <label for="adhar">Adhar Card</label>
+        <input type="file" id="adhar">
+        <button onclick="checkFile('adhar')">Open</button>
+      </li>
+      <li>
+        <label for="pan">PAN Card</label>
+        <input type="file" id="pan">
+        <button onclick="checkFile('pan')">Open</button>
+      </li>
+      <li>
+        <label for="voter">Voter ID</label>
+        <input type="file" id="voter">
+        <button onclick="checkFile('voter')">Open</button>
+      </li>
+      <li>
+        <label for="ration">Ration Card</label>
+        <input type="file" id="ration">
+        <button onclick="checkFile('ration')">Open</button>
+      </li>
+      <li>
+        <label for="passport">Passport</label>
+        <input type="file" id="passport">
+        <button onclick="checkFile('passport')">Open</button>
+      </li>
+    </ul>
+  </main>
+
+  <script>
+    function checkFile(inputId) {
+      const fileInput = document.getElementById(inputId);
+      if (fileInput.files.length === 0) {
+        const upload = confirm("You can't open an empty folder. Do you want to upload this file?");
+        if (upload) {
+          fileInput.click(); // Trigger file input selection
+        }
+      } else {
+        alert("File is selected!");
+      }
+    }
+  </script>
+  <script src="ev.js"></script>
+</body>
+</html>

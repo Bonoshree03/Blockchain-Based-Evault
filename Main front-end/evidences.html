@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Verification</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <div class="left-section">
+        <a href="evhome.html" class="logo">E-Vault</a>
+        <span class="divider">|</span>
+        <a href="evhome.html" class="home">Home</a>
+      </div>
+      <div class="right-section">
+        <nav class="menu">
+          <a href="login.html">Log In/Sign Up</a>
+          <a href="about.html">About us</a>
+          <a href="#">Sign out</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Evidence Verification</h1>
+      <section class="verification-section">
+        <p>To access evidence files, please verify your identity again for enhanced security.</p>
+        <form id="verification-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="otp">OTP (Sent to your registered mobile/email):</label>
+            <input type="text" id="otp" name="otp" required>
+          </div>
+          <button type="submit" class="primary-cta">Verify & Access</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="ev.js"></script>
+</body>
+</html>

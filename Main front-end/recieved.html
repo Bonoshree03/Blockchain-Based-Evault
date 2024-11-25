@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Received Files</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <div class="left-section">
+        <a href="evhome.html" class="logo">E-Vault</a>
+        <span class="divider">|</span>
+        <a href="evhome.html" class="home">Home</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search received files..." id="search-bar">
+          <button id="search-button" class="primary-cta">Search</button>
+        </div>
+      </div>
+      <div class="right-section">
+        <nav class="menu">
+          <a href="login.html">Log In/Sign Up</a>
+          <a href="uploader.html">Upload Files</a>
+          <a href="myfiles.html">My Files</a>
+          <a href="allfiles.html">All Files</a>
+          <a href="receivedfiles.html">Received Files</a>
+          <a href="about.html">About us</a>
+          <a href="#">Sign out</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Received Files:</h1>
+      <section class="file-section">
+        <div class="bulk-actions">
+          <button onclick="bulkShare()">Share Selected</button>
+          <button onclick="bulkDownload()">Download Selected</button>
+          <button onclick="bulkDelete()">Delete Selected</button>
+        </div>
+        <ul id="file-list">
+          <!-- Received files will be dynamically populated here -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="ev.js"></script>
+</body>
+</html>

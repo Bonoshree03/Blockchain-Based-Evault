@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Records</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <div class="left-section">
+        <a href="evhome.html" class="logo">E-Vault</a>
+        <span class="divider">|</span>
+        <a href="evhome.html" class="home">Home</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search records..." id="search-bar">
+          <button id="search-button" class="primary-cta">Search</button>
+        </div>
+      </div>
+      <div class="right-section">
+      <nav class="menu">
+        <a href="uploader.html">Upload Files</a>
+        
+        <a href="#received">Received Files</a>
+        <a href="#downloaded">Downloaded Files</a>
+      </nav>
+    </div>
+    </header>
+    <main>
+      <h1>Your Healthcare Documents</h1>
+      <section class="records-section">
+        <h2>Upload New Record</h2>
+        <form id="healthcare-upload-form">
+          <label for="healthcare-category">Select Record Type:</label>
+          <select id="healthcare-category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="medical-prescriptions">Medical Prescriptions</option>
+            <option value="medicine-history">Medicine History</option>
+            <option value="surgeries">Surgeries</option>
+            <option value="doctors-consulted">Doctors Consulted</option>
+            <option value="health-insurance">Health Insurance</option>
+          </select>
+          <label for="healthcare-file-upload">Select File:</label>
+          <input type="file" id="healthcare-file-upload" required>
+          <button type="submit" class="primary-cta" id="upload-healthcare-button">Upload</button>
+        </form>
+      </section>
+      <section class="uploaded-records">
+        <h2>Your healthcare reports and records</h2>
+        <ul id="healthcare-record-list">
+          <!-- Dynamically populated records -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="healthcare.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <div class="left-section">
+        <a href="evhome.html" class="logo">E-Vault</a>
+        <span class="divider">|</span>
+        <a href="evhome.html" class="home">Home</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search records..." id="search-bar">
+          <button id="search-button" class="primary-cta">Search</button>
+        </div>
+      </div>
+      <div class="right-section">
+      <nav class="menu">
+            <a href="login.html">Log In/Sign Up</a>
+            <a href="uploader.html">Upload Files</a>
+            
+            <a href="allfiles.html">All Files</a>
+            <a href="about.html">About us</a>
+            <a href="#">Sign out</a>
+      </nav>
+    </div>
+    </header>
+    <main>
+      <h1>Your bank documents:</h1>
+      <section class="records-section">
+        <h2>Upload New Record</h2>
+        <form id="bank-upload-form">
+          <label for="bank-category">Select Record Type:</label>
+          <select id="bank-category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="bank-passbook-documents">bank passbook</option>
+            <option value="bank-acc-documents">bank account details</option>
+            <option value="bank-fd-documents">Deposits</option>
+            <option value="bank-loan-documents">bank loan details (like sanction paper)</option>
+
+            <option value="Others">Others</option>
+          </select>
+          <label for="bank-file-upload">Select File:</label>
+          <input type="file" id="bank-file-upload" required>
+          <button type="submit" class="primary-cta" id="upload-bank-button">Upload</button>
+        </form>
+      </section>
+      <section class="uploaded-records">
+        <h2>Your Records</h2>
+        <ul id="bank-record-list">
+          <!-- Dynamically populated records -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="ev.js"></script>
+</body>
+</html>

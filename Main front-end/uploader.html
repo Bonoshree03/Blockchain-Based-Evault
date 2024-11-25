@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Files</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <div class="left-section">
+        <a href="evhome.html" class="logo">E-Vault</a>
+        <span class="divider">|</span>
+        <a href="evhome.html" class="home">Home</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search files..." id="search-bar">
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+      <div class="right-section">
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav class="menu">
+          <a href="login.html">Log In/Sign Up</a>
+          <a href="uploader.html">Upload Files</a>
+          
+          <a href="allfiles.html">All Files</a>
+          <a href="about.html">About us</a>
+          <a href="#">Sign out</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Here Are Your Files</h1>
+      <section class="upload-section">
+        <h2>Upload Your Files</h2>
+        <form id="upload-form">
+          <label for="file-category">Select Category:</label>
+          <select id="file-category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="education">Education</option>
+            <option value="identification">Identification</option>
+            <option value="legal">Legal</option>
+            <option value="banking">Banking</option>
+            <option value="evidences">Evidences</option>
+          </select>
+          <label for="file-upload">Select File:</label>
+          <input type="file" id="file-upload" required>
+          <button type="submit" id="upload-button">Upload</button>
+        </form>
+      </section>
+      <section class="uploaded-files">
+        <h2>Previously uploaded documents:</h2>
+        <ul id="file-list">
+          <!-- Dynamically populated files -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="ev.js"></script>
+</body>
+</html>

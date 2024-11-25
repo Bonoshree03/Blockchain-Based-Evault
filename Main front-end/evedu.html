@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="ev.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <div class="left-section">
+        <a href="evhome.html" class="logo">E-Vault</a>
+        <span class="divider">|</span>
+        <a href="evhome.html" class="home">Home</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search records..." id="search-bar">
+          <button id="search-button" class="primary-cta">Search</button>
+        </div>
+      </div>
+      <div class="right-section">
+      <nav class="menu">
+            <a href="loginkhtml">Log In/Sign Up</a>
+            <a href="uploader.html">Upload Files</a>
+
+            <a href="allfiles.html">All Files</a>
+            <a href="about.html">About us</a>
+            <a href="#">Sign out</a>
+      </nav>
+    </div>
+    </header>
+    <main>
+      <h1>Your educational documents and certifications</h1>
+      <section class="records-section">
+        <h2>Upload New Record</h2>
+        <form id="education-upload-form">
+          <label for="education-category">Select Record Type:</label>
+          <select id="education-category" required>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="10th-admit-and-marksheet">10th</option>
+            <option value="12th-admit-and-marksheet">12th</option>
+            <option value="Certificates">Certificates</option>
+            <option value="University-College">University/College</option>
+            <option value="Others">Others</option>
+          </select>
+          <label for="education-file-upload">Select File:</label>
+          <input type="file" id="education-file-upload" required>
+          <button type="submit" class="primary-cta" id="upload-education-button">Upload</button>
+        </form>
+      </section>
+      <section class="uploaded-records">
+        <h2>Your Records</h2>
+        <ul id="educational-record-list">
+          <!-- Dynamically populated records -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="ev.js"></script>
+</body>
+</html>
